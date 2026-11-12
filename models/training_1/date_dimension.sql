@@ -9,9 +9,9 @@ select
  WHEN DAYNAME( TO_TIMESTAMP(STARTED_AT)) in ('Sat','Sun')
  THEN 'WEEKEND'
  ELSE 'BUSINESS DAY'
- END AS DAY_TYPE
+ END AS DAY_TYPE,
 
-
+{{date_type_function('STARTED_AT')}} AS DATE_TYPE_2
 
 
  from
