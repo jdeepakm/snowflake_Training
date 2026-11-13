@@ -17,4 +17,5 @@ WITH BIKE AS(
     where RIDE_ID != '"bikeid"' and STARTED_AT != '"starttime"' and STARTED_AT != 'starttime' and ENDED_AT != '"stoptime"'and ENDED_AT != 'stoptime'
 )
 
+
 select * from BIKE
