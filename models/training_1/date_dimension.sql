@@ -15,8 +15,9 @@ select
 
 
  from
-{{ source('demo', 'bike') }}
+{{ ref('stg_bike') }}
 where STARTED_AT != 'started_at'
 
 )
 select * from cte
+
